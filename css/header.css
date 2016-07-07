@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.welcome {
+    background: #fff none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.welcome .loadpic {
+    position: relative;
+    margin: 150px auto 0;
+}
+.welcome .loadpic .title {
+    background: rgba(0, 0, 0, 0) url("../images/wlogo.jpg") no-repeat scroll left top / 100% 100%;
+    height: 158px;
+    margin: 0 auto 40px;
+    width: 178px;
+}
+.welcome .loadpic .label {
+    background: rgba(0, 0, 0, 0) url("../images/label.jpg") no-repeat scroll left top;
+    height: 28px;
+    margin: 0 auto 40px;
+    width: 850px;
+}
+.welcome .loadpic .progress {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+}
+.welcome .loadpic .progress h2 {
+    color: #c3c3c3;
+    font-family: Arial;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.welcome .loadpic .progress .progress-an {
+    background: #3f91dd none repeat scroll 0 0;
+    height: 4px;
+    width: 0;
+}
+.welcome.hidden {
+    display: none;
+}
+
+/* header */
+.header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.header .logo {
+    height: 50px;
+    left: 32px;
+    position: absolute;
+    top: 35px;
+    width: 250px;
+}
+.header .logo img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.header .nav {
+    bottom: 0;
+    position: fixed;
+    right: -280px;
+    top: 0;
+    width: 350px;
+}
+.header .nav .btn_control {
+    border-radius: 5px;
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    transition: all 0.5s ease 0s;
+    width: 34px;
+}
+.header .nav .btn_control.close {
+    background: rgba(0, 0, 0, 0) url("../images/nav_close.png") no-repeat scroll center center;
+    transform: rotate(360deg);
+}
+.header .nav .btn_control.open {
+    background: rgba(0, 0, 0, 0) url("../images/nav_open.png") no-repeat scroll center center;
+    transform: rotate(0deg);
+}
+.header .nav .btn_control:hover {
+    box-shadow: 0 0 5px #333;
+}
+.header .nav .list {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+}
+.header .nav .list .mask {
+    background-color: #317cc0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+}
+.header .nav .list ul {
+    margin-top: 20%;
+    position: relative;
+    z-index: 999;
+}
+.header .nav .list ul li {
+    font-size: 18px;
+    height: 66px;
+    line-height: 66px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 1.5s ease 0s;
+}
+.header .nav .list ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+.header .nav .list ul li:hover, .header .nav .list ul li.on {
+    background: #5a96cd none repeat scroll 0 0;
+}
+.header .nav .list ul li:hover a, .header .nav .list ul li.on a {
+    transform: translateY(-66px);
+}
+
+@media screen and (max-width: 1860px) {
+    
+}
+
+@media screen and (max-width: 1630px) {
+
+}
+
+@media screen and (max-width: 1366px) {
+  .header .nav { width: 280px; }
+  .header .nav .list { width: 210px; }
+  .header .nav .list ul li a { font-size: 16px; }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 860px) {
+    .welcome .loadpic .label{display:none;}
+}
+
+@media screen and (max-width: 760px) {
+  .welcome .loadpic { width: 60%; }
+  .welcome .loadpic .title { height: 100px;width: 115px; }
+  .welcome .loadpic .label{display:none;}
+  .welcome .loadpic .progress .preogress-shadow { height: 4em; }
+  .header { height: 50px; background-color: #ffffff; box-shadow: 0px 1px 5px #dddddd; }
+  .header .logo { top: 0px; left: 0px; overflow: hidden; height: 50px; }
+  .header .logo img { top: 10px; left: 10px;height:30px; }
+  .header .nav .btn_control { position: absolute; top: 10px; left: 30px;}
+  .header .nav .list ul{margin-top: 0;}
+}
+
+@media screen and (max-height: 920px) {
+
+}
+
+@media screen and (max-height: 820px) {
+
+}
+
+@media screen and (max-height: 760px) {
+
+}
+
+@media screen and (max-height: 660px) {
+  .header .nav .list ul li { line-height: 52px; height: 52px; }
+  .header .nav .list ul li:hover, .header .nav .list ul li.on { background: #5a96cd none repeat scroll 0% 0%; }
+  .header .nav .list ul li:hover a, .header .nav .list ul li.on a { transform: translateY(-52px); }
+}
